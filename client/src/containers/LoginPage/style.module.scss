@@ -1,0 +1,70 @@
+.loginContainer {
+    padding: 150px 0 0 0;
+
+    .loginContent {
+        width: 80%;
+        margin: 0 auto;
+
+        .formBlock {
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+
+            .formFiled {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                border-radius: 10px;
+
+                input {
+                    height: 50px;
+                    width: 70%;
+                    padding: 10px;
+                    border-radius: 10px;
+                    border: 1px solid rgb(199, 198, 198);
+                    font-size: 1em;
+                    color: grey;
+                }
+            }
+
+            .formBtns {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 30px;
+
+                button {
+                    width: 150px;
+                    height: 50px;
+                    padding: 10px;
+                    border-radius: 10px;
+                    border: 1px solid rgb(199, 198, 198);
+                    font-size: 1em;
+                    color: grey;
+
+                    &:hover {
+                        box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+                    }
+                }
+            }
+        }
+
+        .linkToCreateAcc {
+            margin: 5% 40%;
+            width: 250px;
+            font-size: 1em;
+
+            a {
+                text-decoration: none;
+                font-size: 1em;
+                font-weight: 600;
+                color: grey;
+            }
+
+        }
+    }
+}
