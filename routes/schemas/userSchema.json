@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "login": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100,
+            "require": true
+        },
+        "password": {
+            "type": "string",
+            "minLength": 6,
+            "require": true
+        },
+        "confirm": {
+            "type": "string",
+            "minLength": 6,
+            "require": true
+        },
+        "email": {
+            "type": "string",
+            "minLength": 10
+        }
+    },
+    "additionalProperties": false
+}

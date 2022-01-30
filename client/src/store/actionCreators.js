@@ -1,18 +1,18 @@
-import { USER, LOADING, LOAD_FAILED, USER_LOGOUT } from './actiontypes';
+import * as actTypes from './actiontypes';
 
 const actionOne = () => {
-    const action = { type: LOADING, payload: 'isLoading' };
+    const action = { type: actTypes.LOADING, payload: 'isLoading' };
     return action;
 };
 
 const actionTwo = async (payload) => {
 
     if (!payload) {
-        const action = { type: LOAD_FAILED, payload: 'loadFail' };
+        const action = { type: actTypes.LOAD_FAILED, payload: 'loadFail' };
         return action;
     }
 
-    const action = { type: USER, payload: payload.login.payload };
+    const action = { type: actTypes.USER, payload: payload.login.payload.profile };
     return action;
 };
 
@@ -21,6 +21,18 @@ export const getData = async (dispatch, payload) => {
     dispatch(await actionTwo(payload));
 };
 
-export const logoutForm = (dispath, payload) => {
-    return dispath({ type: USER_LOGOUT, payload: payload});
-}
+export const logoutForm = (dispatch, payload) => {
+    return dispatch({ type: actTypes.USER_LOGOUT, payload: payload});
+};
+
+export const updUserName = (dispatch, payload) => {
+    return dispatch({ type: actTypes.USER_UPD_NAME, payload: payload});
+};
+
+export const updEmail = (dispatch, payload) => {
+    return dispatch({ type: actTypes.USER_UPD_EMAIL, payload: payload});
+};
+
+export const updAvatar = (dispatch, payload) => {
+    return dispatch({ type: actTypes.USER_UPD_AVATAR, payload: payload});
+};

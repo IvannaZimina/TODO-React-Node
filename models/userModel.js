@@ -2,15 +2,16 @@ const mongoose = require('mongoose');
 const crypto = require('crypto');
 
 const { Schema } = mongoose;
+require('./taskModel');
 
 const userSchema = new Schema({
-    login: { type: Schema.Types.String, unique: true },
-    hashPwd: { type: Schema.Types.String, require: true },
-    email: { type: Schema.Types.String, unique: true },
-    avatar: { type: Schema.Types.String },
-    role: { type: Schema.Types.String },
-    userName: {type: Schema.Types.String},
-
+    login:    { type: Schema.Types.String, unique: true },
+    hashPwd:  { type: Schema.Types.String, require: true },
+    email:    { type: Schema.Types.String, unique: true },
+    role:     { type: Schema.Types.String },
+    avatar:   { type: Schema.Types.String, default: '' },
+    userName: { type: Schema.Types.String, default: '' },
+    tasks:    [{ type: Schema.Types.ObjectId, ref: 'task' }]
 }, { timestamps: true });
 
 userSchema.plugin(require('mongoose-beautiful-unique-validation'));

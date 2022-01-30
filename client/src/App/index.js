@@ -1,31 +1,31 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
-import Header from '../components/Header';
+import HeaderPage from '../components/HeaderPage';
+
 import LoginPage from '../containers/LoginPage'
 import HomePage from '../containers/HomePage';
 import RegisterPage from '../containers/RegisterPage';
 import ProfilePage from '../containers/ProfilePage';
 
-import { useSelector } from 'react-redux';
-
 function App() {
-
   const user = useSelector(state => state.user.user);
 
   return (
     <div>
 
-      <Header user={user}/>
+      <HeaderPage user={user} />
 
       <Routes>
         <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/login" element={<LoginPage />}/>
+        <Route exact path="/login" element={<LoginPage />} />
         <Route exact path="/register" element={<RegisterPage />} />
-        <Route path="/profile/:id" element={user.id ? <ProfilePage /> : <HomePage />} />
+        <Route path="/profile" element={user ? <ProfilePage /> : <LoginPage />} />
       </Routes>
 
-    </div>
+    </div >
   );
 }
 

@@ -4,14 +4,11 @@ const express = require('express');
 const logger = require('morgan');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
-const fileUpload = require('express-fileupload');
 
-const indexRoute = require('../routes/index');
 const authFormRoute = require('../routes/authFormRoute');
+const profileRoute = require('../routes/profileRoute');
 
 const expressServer = express(); // listen port 5000
-
-expressServer.use(fileUpload({}));
 
 expressServer.use(logger('dev'));
 expressServer.use(express.json());
@@ -27,9 +24,8 @@ expressServer.use(cors({
 }))
 
 // routes
-expressServer.use('/', indexRoute);
 expressServer.use('/authForm', authFormRoute);
-
+expressServer.use('/profile', profileRoute);
 
 // catch 404 and forward to error handler
 expressServer.use(function(req, res, next) {

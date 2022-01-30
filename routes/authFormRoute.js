@@ -1,12 +1,6 @@
 const router = require('express').Router();
-const multer = require('multer');
-
-const upload = multer({ dest: 'public/images' });
-const uploadsSingle = upload.single('avatar');
-
-
 const authCtrl = require('../controller/authCtrl');
-// const { uploadsSingle } = require('../controller/uploadSingle');
+const tokensCtrl = require('../controller/tokensCtrl');
 
 router.post('/signOn', async (req, res) => {
     try {
@@ -22,52 +16,29 @@ router.post('/login', async (req, res) => {
     try {
         const data = req.body;
         const login = await authCtrl.login(data);
+        // res.setHeader('Authorization', `Bearer: ${login.payload.accessT}`, {httpOnly: true});
+        res.cookie('accessT', login.payload.accessT, {httpOnly: true});
         res.json({ status: 'ok', login });
     } catch (err) {
         res.json(err);
     }
 });
 
-
-
-// UPLOAD MULTER
-router.post('/avatarTwo', uploadsSingle, async (req, res) => {
-    const data = req.file;
-
-    console.log('avatar: ', data);
-
-})
-
-
-
-
-
-
-router.post('/upload', authCtrl.uploadAvatar);
-
-router.get('/getUsers');
-
-router.get('/getUser/:id', async (req, res) => {
+router.post('/logout', async (req, res) => {
     try {
-        const {id} = req.params;
-        const doc = await authCtrl.findUserById(id);
-        res.json({status: 'success', uid: doc });
+        const {refreshT} = req.body;
+        const deleteRefreshToken = await tokensCtrl.deleteRefreshToken(refreshT);
+
+        if (deleteRefreshToken.status === 'token id delete') {
+            res.clearCookie('accessT');
+        };
+
+        res.json({ status: 'Logout successful' });
     } catch (err) {
         res.json(err);
     }
-})
 
-router.put('/updateUser', async (req, res) => {
-    try {
-        const data = req.body;
-        console.log('updateUser: ', data);
-
-        res.json({status: 'success update' });
-    } catch (err) {
-        res.json(err);
-    }
 });
 
-router.delete('/deleteUser/:id');
 
 module.exports = router;
