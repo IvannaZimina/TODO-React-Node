@@ -1,0 +1,139 @@
+@charset "UTF-8";
+.hidden {
+  display: none;
+}
+
+.createWindow {
+  width: 1000px;
+  height: 500px;
+}
+.createWindow .formFiled {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+.createWindow .formFiled input, .createWindow .formFiled textarea {
+  height: 50px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c7c6c6;
+  font-size: 1em;
+}
+.createWindow .formFiled textarea {
+  height: 200px;
+}
+.createWindow .priority {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+.createWindow .priority .titlePriority {
+  width: 20%;
+}
+.createWindow .priority .choosePriority {
+  width: 80%;
+  align-content: flex-start;
+}
+.createWindow .priority .choosePriority label {
+  margin-right: 30px;
+}
+.createWindow .priority .choosePriority label input {
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  border: 1px solid #c7c6c6;
+}
+.createWindow .performer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.createWindow .performer .titlePerformer {
+  width: 20%;
+}
+.createWindow .performer select {
+  width: 80%;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #c7c6c6;
+}
+.createWindow .dateDoneTo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px;
+}
+.createWindow .dateDoneTo .titleDateDoneTo {
+  width: 20%;
+}
+.createWindow .dateDoneTo input {
+  width: 80%;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #c7c6c6;
+}
+.createWindow .files {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+.createWindow .files .titleАiles {
+  width: 20%;
+}
+.createWindow .files input {
+  width: 80%;
+}
+.createWindow .formBtns {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.createWindow .formBtns button {
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c7c6c6;
+  font-size: 1em;
+  color: grey;
+}
+.createWindow .formBtns button:hover {
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.successRegister {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1em;
+  color: grey;
+}
+.successRegister div {
+  margin: 0 0 30px 0;
+}
+.successRegister div a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  padding: 10px;
+  color: grey;
+}
+.successRegister div a:hover {
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+}/*# sourceMappingURL=style.module.css.map */

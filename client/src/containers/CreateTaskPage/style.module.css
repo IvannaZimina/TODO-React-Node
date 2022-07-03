@@ -1,0 +1,25 @@
+.createContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 130px 0 0 0;
+}
+.createContainer .createContent .backLink {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.createContainer .createContent .backLink a {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  color: grey;
+}
+.createContainer .createContent .backLink a:hover {
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+}/*# sourceMappingURL=style.module.css.map */

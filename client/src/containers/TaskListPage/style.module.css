@@ -1,0 +1,12 @@
+.taskListContainer {
+  padding: 120px 0 0 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.taskListContainer .navbarTasks {
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+.taskListContainer .taskListBlock {
+  width: 1300px;
+}/*# sourceMappingURL=style.module.css.map */

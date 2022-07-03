@@ -1,0 +1,16 @@
+.authContainer {
+  padding: 150px 0 0 0;
+  width: 80%;
+  margin: 0 auto;
+}
+.authContainer .linkToCreateAcc {
+  margin: 5% 40%;
+  width: 250px;
+  font-size: 1em;
+}
+.authContainer .linkToCreateAcc a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  color: grey;
+}/*# sourceMappingURL=style.module.css.map */

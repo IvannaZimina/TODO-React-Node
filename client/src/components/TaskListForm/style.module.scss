@@ -1,0 +1,47 @@
+.taskList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    padding: 5px;
+
+    .checkPoint {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    h6 {
+        margin: 0;
+    }
+
+    .line {
+        color: grey;
+    }
+
+    input, .performerTask, .priorityTask, .dateDoneToTask, .updatedAtTask, .statusDoneTask {
+        margin-right: 20px;
+    }
+
+    .titleTask {
+        width: 350px;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+
+            &:hover {
+                color: #0e02be;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .performerTask {
+        width: 150px;
+    }
+
+    .priorityTask, .statusDoneTask, .dateDoneToTask, .updatedAtTask {
+        width: 150px;
+    }
+}

@@ -1,0 +1,38 @@
+.taskList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  padding: 5px;
+}
+.taskList .checkPoint {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.taskList h6 {
+  margin: 0;
+}
+.taskList .line {
+  color: grey;
+}
+.taskList input, .taskList .performerTask, .taskList .priorityTask, .taskList .dateDoneToTask, .taskList .updatedAtTask, .taskList .statusDoneTask {
+  margin-right: 20px;
+}
+.taskList .titleTask {
+  width: 350px;
+}
+.taskList .titleTask a {
+  text-decoration: none;
+  color: #000000;
+}
+.taskList .titleTask a:hover {
+  color: #0e02be;
+  text-decoration: underline;
+}
+.taskList .performerTask {
+  width: 150px;
+}
+.taskList .priorityTask, .taskList .statusDoneTask, .taskList .dateDoneToTask, .taskList .updatedAtTask {
+  width: 150px;
+}/*# sourceMappingURL=style.module.css.map */

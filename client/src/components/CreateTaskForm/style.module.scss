@@ -1,0 +1,163 @@
+.hidden {
+    display: none;
+}
+
+.createWindow {
+    width: 1000px;
+    height: 500px;
+
+    .formFiled {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+        border-radius: 10px;
+
+        input, textarea {
+            height: 50px;
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid rgb(199, 198, 198);
+            font-size: 1em;
+        }
+
+        textarea {
+            height: 200px;
+
+        }
+    }
+
+    .priority {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+
+        .titlePriority {
+            width: 20%;
+        }
+
+        .choosePriority {
+            width: 80%;
+            align-content: flex-start;
+
+            label {
+                margin-right: 30px;
+
+                input {
+                    height: 15px;
+                    width: 15px;
+                    border-radius: 10px;
+                    border: 1px solid rgb(199, 198, 198);
+                }
+            }
+        }
+    }
+
+    .performer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+
+        .titlePerformer {
+            width: 20%;
+        }
+
+        select {
+            width: 80%;
+            height: 50px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(199, 198, 198);
+        }
+    }
+
+    .dateDoneTo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5px;
+
+        .titleDateDoneTo {
+            width: 20%;
+        }
+
+        input {
+            width: 80%;
+            height: 50px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(199, 198, 198);
+        }
+    }
+
+    .files {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+
+        .titleАiles {
+            width: 20%;
+        }
+
+        input {
+            width: 80%;
+        }
+    }
+
+    .formBtns {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+
+        button {
+            width: 250px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid rgb(199, 198, 198);
+            font-size: 1em;
+            color: grey;
+
+            &:hover {
+                box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+            }
+        }
+    }
+}
+
+.successRegister {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1em;
+    color: grey;
+
+    div {
+        margin: 0 0 30px 0;
+
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            text-align: center;
+            padding: 10px;
+            color: grey;
+
+            &:hover {
+                box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+            }
+        }
+    }
+}
+

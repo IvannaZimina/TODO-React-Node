@@ -1,0 +1,91 @@
+.headerContainer {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.headerContainer .contentHeader {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.headerContainer .contentHeader .logoBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+}
+.headerContainer .contentHeader .logoBlock .logoHome {
+  height: 60px;
+  padding: 5px 10px;
+}
+.headerContainer .contentHeader .logoBlock .logoHome img {
+  height: 40px;
+}
+.headerContainer .contentHeader .logoBlock .logoHome:hover {
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.headerContainer .contentHeader .logoBlock h1 {
+  margin: 0 30px;
+  font-weight: 600;
+}
+.headerContainer .contentHeader .userDataBlock {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5em;
+  width: 30%;
+}
+.headerContainer .contentHeader .userDataBlock .avatar, .headerContainer .contentHeader .userDataBlock .userName, .headerContainer .contentHeader .userDataBlock .logoutBtn {
+  margin-right: 15px;
+}
+.headerContainer .contentHeader .userDataBlock .avatar {
+  width: 55px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.headerContainer .contentHeader .userDataBlock .avatar img {
+  width: 55px;
+  height: 55px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.headerContainer .contentHeader .userDataBlock .userName, .headerContainer .contentHeader .userDataBlock .logoutBtn {
+  box-shadow: 0px 0px 10px 2px rgba(86, 132, 167, 0.2);
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+.headerContainer .contentHeader .userDataBlock .userName:hover, .headerContainer .contentHeader .userDataBlock .logoutBtn:hover {
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.294);
+}
+.headerContainer .contentHeader .link {
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333333;
+  padding: 0 5px;
+}
+.headerContainer .contentHeader .link:hover {
+  box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.headerContainer .contentHeader .taskList {
+  height: 60px;
+  margin-left: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.headerContainer .contentHeader .taskList img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.headerContainer .contentHeader .taskList:hover {
+  box-shadow: 0px 0px 5px 2px rgba(34, 60, 80, 0.2);
+}/*# sourceMappingURL=style.module.css.map */

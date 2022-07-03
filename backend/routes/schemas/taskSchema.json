@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "maxLength": 200,
+            "require": true
+        },
+        "description": {
+            "type": "string",
+            "maxLength": 10000,
+            "require": true
+        },
+        "priority": {
+            "type": "string",
+            "require": true
+        },
+        "performer": {
+            "type": "string",
+            "require": true
+        },
+        "dateDoneTo": {
+            "type": "date",
+            "require": true
+        },
+        "uid": {
+            "type": "string",
+            "require": true
+        }
+    },
+    "additionalProperties": false
+}

@@ -15,8 +15,7 @@ function LoginPage() {
   let formData = {}
 
   const onSubmit = async (values) => {
-    const { data } = await axios.post('/authForm/login', values);
-    await getData(dispatch, data);
+    await getData(dispatch, values);
     navigate('/');
   };
 
