@@ -37,7 +37,7 @@ Both roles cannot change the task, but only discuss it in the comments (this fun
 ## Environment
 Clone project to your machine. Use npm install to add all dependencies in project and open web-app.
 
-View
+## View
 
 ## ================== main page
 ![image](https://user-images.githubusercontent.com/46706194/177044944-ea481390-d34e-4614-b73a-0449f525e17a.png)
