@@ -11,6 +11,7 @@ Mongoose, AJV, crypto, jsonwebtoken, deep-freeze, multer for images.
 JavaScript, React, Redux, localStorage via redux-persist, Sass (SCSS).
 
 ## Description
+System is internal. Only registered users can use the site. 
 
 ### Backend
 A web-app was created with Node.js application (via express-generator) using MVC. The next modules were created:
@@ -28,7 +29,7 @@ Login, Create Account, Update accountCreate Task, ManageTask, List of tasks.
 
 There are some buttons on the top the page to manage the navigation of the site: Login, User information, Logout, Tasks, Home.
 
-System is internal. Only registered users can use the site. There are two roles in the system: administrator and manager.
+There are two roles in the system: administrator and manager.
 For both roles, the functionality of updating personal data is available. Each field in can be updated individually.
 The administrator can create tasks and delete them. The manager can only read tasks and change the status and due date.
 Both roles cannot change the task, but only discuss it in the comments (this functionality is under development).
