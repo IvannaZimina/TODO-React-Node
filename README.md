@@ -48,7 +48,7 @@ Clone project to your machine. Use npm install to add all dependencies in projec
 ## ================== create account page
 ![image](https://user-images.githubusercontent.com/46706194/177044992-ce3ec377-21d3-4ed9-b6db-a200994c8641.png)
 
-## ================== updation personal information page
+## ================== update personal information page
 ![image](https://user-images.githubusercontent.com/46706194/177045023-dba72524-a37b-4764-9df1-570bda6631b3.png)
 
 ## ================== managing task for admin page
