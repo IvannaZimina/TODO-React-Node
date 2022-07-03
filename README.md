@@ -23,7 +23,7 @@ A web-app was created with Node.js application (via express-generator) using MVC
 -	Schemas module: contains JSON validation schemes for validate the data from front.
 
 
-### Fronetend
+### Frontend
 A basic React-app was created with Create React App. The following pages were implemented:
 Login, Create Account, Update accountCreate Task, ManageTask, List of tasks.
 
